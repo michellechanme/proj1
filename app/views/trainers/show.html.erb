@@ -4,7 +4,8 @@
 
 <h4>Pokemons:</h4>
 <ul>
-  <% user.pokemons.each do |pokemon| %>
+  <% @trainer.pokemons.each do |pokemon| %>
   <li><%= pokemon.name %>: <%= pokemon.level %></li>
+  <li>Health: <%= pokemon.health %></li>
   <% end %>
 </ul>
